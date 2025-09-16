@@ -135,3 +135,4 @@ D:\Training\Micro Project(Vignesh)\Micro Project\InternalKnowledgeBase.Api\obj\D
 D:\Training\Micro Project(Vignesh)\Micro Project\InternalKnowledgeBase.Api\obj\Debug\net9.0\InternalKnowledgeBase.Api.pdb
 D:\Training\Micro Project(Vignesh)\Micro Project\InternalKnowledgeBase.Api\obj\Debug\net9.0\InternalKnowledgeBase.Api.genruntimeconfig.cache
 D:\Training\Micro Project(Vignesh)\Micro Project\InternalKnowledgeBase.Api\obj\Debug\net9.0\ref\InternalKnowledgeBase.Api.dll
+D:\Training\Micro Project(Vignesh)\Micro Project\InternalKnowledgeBase.Api\obj\Debug\net9.0\InternalKnowledgeBase.Api.sourcelink.json
