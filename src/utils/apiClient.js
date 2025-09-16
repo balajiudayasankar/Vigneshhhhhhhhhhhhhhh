@@ -157,6 +157,49 @@ export const apiHelpers = {
       window.URL.revokeObjectURL(url);
       return response;
     });
+  },
+  // Advanced search with filters
+  advancedSearch: (searchTerm, filters = {}) => {
+    const params = new URLSearchParams({
+      q: searchTerm,
+      ...filters
+    });
+    return apiClient.get(`/search/advanced?${params}`);
+  },
+  
+  // Real-time notifications
+  getNotifications: (userId) => {
+    return apiClient.get(`/notifications/${userId}`);
+  },
+  
+  // Mark notification as read
+  markNotificationRead: (notificationId) => {
+    return apiClient.patch(`/notifications/${notificationId}/read`);
+  },
+  
+  // Bulk operations
+  bulkOperation: (operation, items) => {
+    return apiClient.post('/bulk-operations', {
+      operation,
+      items
+    });
+  },
+  
+  // Analytics data
+  getAnalytics: (type, dateRange = 'month') => {
+    return apiClient.get(`/analytics/${type}?range=${dateRange}`);
+  },
+  
+  // Content versioning
+  getArticleVersions: (articleId) => {
+    return apiClient.get(`/articles/${articleId}/versions`);
+  },
+  
+  // Export data
+  exportData: (type, format = 'csv') => {
+    return apiClient.get(`/export/${type}?format=${format}`, {
+      responseType: 'blob'
+    });
   }
 };
 
